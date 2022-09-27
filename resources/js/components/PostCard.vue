@@ -9,6 +9,9 @@
      <p class="card-text">
         {{ post.post_content.substring(0, 150) }}
      </p>
+     <span>
+      ciao
+     </span>
   </div>
 </template>
 
