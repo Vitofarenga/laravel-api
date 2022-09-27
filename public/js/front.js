@@ -95,7 +95,13 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({});
+!(function webpackMissingModule() { var e = new Error("Cannot find module './components/Main.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    MainComponent: !(function webpackMissingModule() { var e = new Error("Cannot find module './components/Main.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  }
+});
 
 /***/ }),
 
@@ -114,15 +120,10 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
+  return _c("section", [_c("MainComponent")], 1);
 };
 
-var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("div", [_c("h1", [_vm._v("\n       fasda\n   ")])]);
-}];
+var staticRenderFns = [];
 render._withStripped = true;
 
 
