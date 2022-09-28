@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-12">
             <h1 class="p-3 m-3">
-
+                 ciao
             </h1>
             <div class="posts">
               <PostCard v-for="post in posts" :key="post.id" :post="post"/>
@@ -28,7 +28,9 @@ export default {
             loading: false,
           }
       },
-      getPosts(postsPage = 1){
+      
+      methods:{
+        getPosts(postsPage = 1){
         axios.get('/api/posts', {
             page:postsPage
         }).then((response) => {
@@ -41,9 +43,11 @@ export default {
             console.error(error);
         })
       },
+      },
       created(){
         this.getPosts();
       }
+      
 }
 </script>
 
