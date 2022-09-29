@@ -20,4 +20,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::namespace('Api')->group(function(){
        Route::get('/posts', 'PostController@index');
        Route::get('/posts/{id}', 'PostController@show');
+
+       Route::get('/categories', 'CategoryController@index');
+       Route::get('/categories/{id}', 'CategoryController@show');
+
+       Route::get('/users', 'UserController@index');
+       Route::get('/users/{id}', 'UserController@show');
 });
