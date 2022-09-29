@@ -1,5 +1,8 @@
 <template>
  <section>
+    <h1>
+      ciao
+    </h1>
     <MainComponent/>
  </section>
 </template>
